@@ -21,6 +21,12 @@ public class Main {
         for (Figura i: c){
             System.out.println(i);
             System.out.println("Área = "+i.calcularArea());
+            //instancia de
+            if (i instanceof Cilindro){
+                //converteu o objet do tipo figura para cilindro aonde podemos acessar o metodod
+                System.out.println("Volume = "+((Cilindro) i).calcularVolume());
+            }
+            System.out.println();
         }
 
 
